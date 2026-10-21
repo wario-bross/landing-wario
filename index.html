@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título y Descripción para SEO -->
+    <title>Wario Bross | Sabor a Cali - Hamburguesas Angus</title>
+    <meta name="description" content="La 2x1 mas BIG de Cali, más grande, 100% carne Angus. Pídela hoy y la bebida es gratis!">
+    
+    <!-- Favicon de Pestaña -->
+    <link rel="icon" type="image/png" href="ChatGPT Image 30 ago 2026, 10_47_49 p.m..png">
+    
+    <!-- Open Graph / Configuración para visualización de enlaces (WhatsApp, Facebook, etc.) -->
+    <meta property="og:title" content="Wario Bross | La 2x1 más BIG de Cali">
+    <meta property="og:description" content="100% carne Angus. ¡Pídela hoy y la bebida es gratis!">
+    <meta property="og:image" content="favicon enlace.png">
+    <meta property="og:url" content="https://wario-bross.vercel.app">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS (CDN para despliegue rápido) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Configuración de colores de la marca -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        wario: {
+                            yellow: '#FFD700',
+                            fuchsia: '#E0115F',
+                            black: '#111111',
+                            white: '#FFFFFF'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Ajuste fino para el fondo oscurecido */
+        .bg-overlay {
+            background-color: rgba(17, 17, 17, 0.85); /* Negro con 85% de opacidad para que resalte el texto */
+        }
+        /* Animación suave para el carrusel */
+        .review-slide {
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-wario-black text-wario-white antialiased font-sans min-h-screen relative">
+
+    <!-- Fondo de Pantalla -->
+    <div class="fixed inset-0 w-full h-full z-0">
+        <img src="portada fudo.jpg" alt="Fondo Wario Bross" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-overlay backdrop-blur-sm"></div>
+    </div>
+
+    <!-- Contenido Principal (Z-index superior para estar sobre el fondo) -->
+    <main class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-10 w-full max-w-md mx-auto">
+        
+        <!-- Logo -->
+        <div class="mb-4">
+            <img src="ChatGPT Image 30 ago 2026, 10_47_49 p.m..png" alt="Wario Bross Logo" class="w-48 drop-shadow-[0_0_20px_rgba(255,215,0,0.4)] hover:scale-105 transition-transform duration-300">
+        </div>
+
+        <!-- Gancho de Ventas (Hook) -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-black uppercase italic leading-tight tracking-tight shadow-black drop-shadow-lg">
+                La <span class="text-wario-yellow">2x1</span> más BIG <br> de Cali
+            </h1>
+            <p class="mt-2 text-lg font-bold text-gray-300">Más grande, 100% carne Angus.</p>
+            <div class="mt-4 inline-block bg-wario-fuchsia text-wario-white px-5 py-2 rounded-lg transform -rotate-2 shadow-lg border-2 border-wario-white">
+                <p class="text-xl font-black uppercase">¡Pídela hoy y la bebida es gratis!</p>
+            </div>
+        </div>
+
+        <!-- Botones de Acción -->
+        <div class="w-full space-y-4 mb-10">
+            <!-- 1. Menú -->
+            <a href="https://wario-bross.vercel.app" class="flex items-center justify-center gap-3 w-full bg-wario-yellow text-wario-black py-4 px-6 rounded-2xl font-black text-xl hover:bg-yellow-400 hover:-translate-y-1 transition-all shadow-[0_4px_0_#B8860B] active:translate-y-0 active:shadow-none">
+                <i class="fa-solid fa-burger text-2xl"></i> VER MENÚ DIGITAL
+            </a>
+
+            <!-- 2. WhatsApp (Pedido) -->
+            <a href="https://wa.me/573214477999?text=Hola%20Wario%20Bross%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido..." target="_blank" class="flex items-center justify-center gap-3 w-full bg-[#25D366] text-white py-4 px-6 rounded-2xl font-bold text-lg hover:bg-[#20bd5a] hover:-translate-y-1 transition-all shadow-[0_4px_0_#1a9647] active:translate-y-0 active:shadow-none">
+                <i class="fa-brands fa-whatsapp text-2xl"></i> Pedir por WhatsApp
+            </a>
+
+            <!-- 3. Cotizaciones -->
+            <a href="https://wa.me/573214477999?text=Hola%20Wario%20Bross%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20quiero%20realizar%20una%20cotizaci%C3%B3n%20para%20un%20evento%21" target="_blank" class="flex items-center justify-center gap-3 w-full bg-wario-black text-wario-white border-2 border-wario-fuchsia py-3 px-6 rounded-2xl font-bold text-lg hover:bg-wario-fuchsia hover:-translate-y-1 transition-all">
+                <i class="fa-solid fa-clipboard-list text-xl text-wario-fuchsia group-hover:text-white"></i> Cotizaciones para Eventos
+            </a>
+
+            <!-- 4. Como llegar -->
+            <a href="https://maps.app.goo.gl/Q8PkLr7mFcqccmnt8" target="_blank" class="flex items-center justify-center gap-3 w-full bg-white text-wario-black py-3 px-6 rounded-2xl font-bold text-lg hover:bg-gray-200 hover:-translate-y-1 transition-all">
+                <i class="fa-solid fa-location-dot text-xl text-red-600"></i> ¿Cómo llegar? (Google Maps)
+            </a>
+
+            <!-- 5. Instagram -->
+            <a href="https://instagram.com/warioburger" target="_blank" class="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white py-3 px-6 rounded-2xl font-bold text-lg hover:opacity-90 hover:-translate-y-1 transition-all">
+                <i class="fa-brands fa-instagram text-2xl"></i> Síguenos en Instagram
+            </a>
+        </div>
+
+        <!-- Sección de Reseñas Dinámicas -->
+        <div class="w-full bg-black/60 border border-wario-yellow/30 p-6 rounded-3xl backdrop-blur-md">
+            <h2 class="text-center text-wario-yellow font-black text-xl mb-4">
+                <i class="fa-solid fa-star text-wario-yellow"></i> Lo que dicen en Cali <i class="fa-solid fa-star text-wario-yellow"></i>
+            </h2>
+            
+            <!-- Contenedor del Carrusel -->
+            <div class="relative h-28 flex items-center justify-center text-center italic text-sm text-gray-200">
+                
+                <!-- Reseña 1 -->
+                <div class="review-slide absolute inset-0 flex flex-col items-center justify-center opacity-100 z-10">
+                    <p>"¡La mejor smash de Cali por lejos! La promo 2x1 es real, la carne es súper jugosa y me regalaron la bebida. Recomendadísimo."</p>
+                    <span class="mt-2 font-bold text-wario-fuchsia">- Mateo G.</span>
+                </div>
+
+                <!-- Reseña 2 -->
+                <div class="review-slide absolute inset-0 flex flex-col items-center justify-center opacity-0 z-0">
+                    <p>"Excelente atención y el sabor de la carne Angus se nota en el primer mordisco. El lugar es brutal para ir con amigos."</p>
+                    <span class="mt-2 font-bold text-wario-fuchsia">- Valentina R.</span>
+                </div>
+
+                <!-- Reseña 3 -->
+                <div class="review-slide absolute inset-0 flex flex-col items-center justify-center opacity-0 z-0">
+                    <p>"Fui por un anuncio que vi en Instagram y valió cada peso. Las porciones son gigantes y el asado es espectacular. ¡Volveré seguro!"</p>
+                    <span class="mt-2 font-bold text-wario-fuchsia">- Andrés C.</span>
+                </div>
+            </div>
+
+            <!-- Botón de Dejar Reseña -->
+            <div class="mt-4 flex justify-center">
+                <a href="https://g.page/r/CVLdr5WURCB4EBM/review" target="_blank" class="text-xs md:text-sm text-white font-bold border border-white/50 px-4 py-2 rounded-full hover:bg-white hover:text-black transition-colors flex items-center gap-2">
+                    <i class="fa-brands fa-google text-wario-yellow"></i> Deja aquí tu reseña
+                </a>
+            </div>
+        </div>
+
+        <footer class="mt-8 text-xs text-gray-500 font-medium">
+            &copy; 2026 Wario Bross. Todos los derechos reservados.
+        </footer>
+    </main>
+
+    <!-- Script para el Carrusel de Reseñas -->
+    <script>
+        const slides = document.querySelectorAll('.review-slide');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            // Ocultar actual
+            slides[currentSlide].classList.remove('opacity-100', 'z-10');
+            slides[currentSlide].classList.add('opacity-0', 'z-0');
+            
+            // Avanzar al siguiente
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            // Mostrar siguiente
+            slides[currentSlide].classList.remove('opacity-0', 'z-0');
+            slides[currentSlide].classList.add('opacity-100', 'z-10');
+        }
+
+        // Cambiar de reseña cada 4.5 segundos
+        setInterval(nextSlide, 4500);
+    </script>
+</body>
+</html>
